@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-- Build RESTful APIs that are easy for other developers to understanda and use
+- Build RESTful APIs that are easy for other developers to understand and use
   in their own applications.
 
 ***
