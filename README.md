@@ -154,6 +154,8 @@ Below are a few keys to remember when thinking about REST:
 
 - There are five RESTful route options we will commonly use as API developers.
 
+***
+
 ## Resources
 
 - [What RESTful Actually Means](https://codewords.recurse.com/issues/five/what-restful-actually-means)
