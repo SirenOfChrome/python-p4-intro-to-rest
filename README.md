@@ -49,6 +49,19 @@ conventions very strongly. If your application posts to Twitter, pulls in a feed
 of images from Instagram, or calls a list of locations from Google Maps, you are
 using a RESTful API to communicate between applications.
 
+<details>
+  <summary>
+    <em>What is REST?</em>
+  </summary>
+
+  <h3>REST is an architectural design pattern, not a framework or code in
+      itself.</h3>
+  <p>Many other web frameworks utilize RESTful design principles in some form or
+     another. By using RESTful principles, Flask apps are able to have a clear
+     and standardized naming structure for routes and actions.</p>
+</details>
+<br/>
+
 ***
 
 ## Example REST Workflow
@@ -89,8 +102,8 @@ These will roughly translate to five routes:
 | Category | Action |
 |----------|--------|
 | Create | Create the new newsletter instance. |
-| Read (All) | Display a list of all newsletters. |
-| Read (One) | Display an individual newsletter. |
+| Retrieve All (Index) | Display a list of all newsletters. |
+| Retrieve One | Display an individual newsletter. |
 | Update | Update the newsletter instance. |
 | Delete | Delete an existing newsletter instance |
 
@@ -117,6 +130,16 @@ defined in our application: `/newsletters` and `/newsletters/<int:id>`.
 
 Flask does a great job of integrating RESTful routes into its system. If you can
 understand routes in Flask, you can understand REST in general.
+
+<details>
+  <summary>
+    <em>How do RESTful routes benefit us as developers?</em>
+  </summary>
+
+  <h3>RESTful routes have a clear mapping between the URL resource and the
+      corresponding backend actions.</h3>
+</details>
+<br/>
 
 ### Review of HTTP Request Methods
 
@@ -153,9 +176,23 @@ Below are a few keys to remember when thinking about REST:
   standardized naming structure for routes and actions.
 
 - RESTful routes have a clear mapping between the URL resource and the
-  corresponding controller actions.
+  corresponding actions carried out by the backend.
 
 - There are five RESTful route options we will commonly use as API developers.
+
+<details>
+  <summary>
+    <em>What are the five RESTful route options we've discussed?</em>
+  </summary>
+
+  <h3>Create</h3>
+  <h3>Retrieve All (Index)</h3>
+  <h3>Retrieve One</h3>
+  <h3>Update</h3>
+  <h3>Delete</h3>
+
+</details>
+<br/>
 
 ***
 
