@@ -39,7 +39,7 @@ he came up with **REST**n (**RE**presentational **S**tate **Transfer**) as a
 standardized way for web applications to structure their URLs.
 
 Fielding also noticed the rise in web applications communicating with each
-other ([that sounds familiar][api]. He hoped that inter-application
+other ([What is an API?][api]). He hoped that inter-application
 communication would get much easier if there was a standard way of forming URLs
 to access resources.
 
@@ -94,6 +94,10 @@ These will roughly translate to five routes:
 | Update | Update the newsletter instance. |
 | Delete | Delete an existing newsletter instance |
 
+***
+
+## HTTP Request Methods and RESTful Routes
+
 To implement each of the above actions, we combine an HTTP request method (or
 _HTTP verb_) such as `GET` or `POST` with a route. Flask then maps each
 method/route combination to the appropriate view in the Flask application. The
@@ -114,7 +118,7 @@ defined in our application: `/newsletters` and `/newsletters/<int:id>`.
 Flask does a great job of integrating RESTful routes into its system. If you can
 understand routes in Flask, you can understand REST in general.
 
-## Review of HTTP Request Methods
+### Review of HTTP Request Methods
 
 So what do `GET`, `POST`, et al. represent? These HTTP verbs give each HTTP
 request unique behavior. Below is an explanation of each verb:
@@ -130,8 +134,8 @@ request unique behavior. Below is an explanation of each verb:
   resources. Sending either a `PATCH` or `PUT` request to `/newsletters/1` will
   update the post with an `id` of 1. `PUT` is used when we want to replace an
   entire resource. `PATCH` is used when we want to update a specific part of a
-  resource. Check out this explanation of the [difference between the
-  two][put-v-patch].
+  resource. Check out this explanation of the [difference between PUT and PATCH
+  ][put-v-patch].
 
 - **DELETE**: The DELETE method requests that the server delete the resource
   identified by the Request URI. This means… that it deletes the record. It's
@@ -162,4 +166,4 @@ Below are a few keys to remember when thinking about REST:
 - [HTTP request methods - Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 
 [api]: https://www.mulesoft.com/resources/api/what-is-an-api
-[put-v-patch]: https://rapidapi.com/blog/put-vs-patch/
+[put-v-patch]: https://www.geeksforgeeks.org/difference-between-put-and-patch-request/
